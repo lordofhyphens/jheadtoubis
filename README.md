@@ -10,4 +10,4 @@ then put the assembly where a Jhead is expected. If you need to adjust it for
 clearance, the SCADs are available for editing.
 
 
-ubis_hotend.scad is from https://www.thingiverse.com/thing:103189
+ubis_model.scad is from https://www.thingiverse.com/thing:103189
