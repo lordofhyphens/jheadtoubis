@@ -18,8 +18,8 @@ difference() {
   }
   if (bracket)
   {
-    translate([-5,12,5])rotate([0,90,0])cylinder(r=m3_diameter/2,h=10);
-    translate([-5,-12,5])rotate([0,90,0])cylinder(r=m3_diameter/2,h=10);
+    translate([-5,12,5])rotate([0,90,0])boltHole(size=4,length=10);
+    translate([-5,-12,5])rotate([0,90,0])boltHole(size=4,length=10);
   }
   translate([0,0,-40+(4.8+4.6+10)/2])head();
   cylinder(r=10/2,h=9.95);
