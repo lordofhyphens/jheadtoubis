@@ -1,5 +1,6 @@
 // first, get a jhead mount going
 m3_diameter=3;
+bowden_od=3;
 module jheadtoubis(bracket=true,nuttrap=true) {
 difference() {
   *translate([0,0,(4.8+4.6+10)/2])cube([16, 16, 4.8+4.6+10], center=true);
@@ -12,7 +13,7 @@ difference() {
     }
   }
   if (nuttrap) {
-    translate([0,0,12])cylinder(r=1.8,h=10);
+    translate([0,0,12])cylinder(r=bowden_od,h=10);
     translate([0,0,14])nutHole(size=4);
   }
   if (bracket)
