@@ -17,7 +17,7 @@ difference() {
   }
   if (bowden) {
     if (nuttrap) {
-      translate([0,0,12])cylinder(r=bowden_od,h=neck_length+11);
+      translate([0,0,12])cylinder(r=bowden_od/2,h=neck_length+11);
       translate([0,0,14])nutHole(size=4);
     }
   }
@@ -37,7 +37,7 @@ difference() {
   }
 }
 }
-jheadtoubis(bracket=true,bowden=false);
+jheadtoubis(bracket=true,bowden=true);
 include<MCAD/nuts_and_bolts.scad>
 include<ubis_model.scad>
 
