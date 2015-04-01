@@ -2,7 +2,8 @@
 m3_diameter=3;
 bowden_od=3;
 slop_scale=1; // if you need to resize the gap from the ubis
-neck_length=5.3;
+neck_length=5.3; // actually needed for smartrapcore
+//neck_length=4.6; // From reifsnyderb's drawings
 module jheadtoubis(bracket=true,nuttrap=true, bowden=true) {
 difference() {
   *translate([0,0,(4.8+4.6+10)/2])cube([16, 16, 4.8+4.6+10], center=true);
